@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        ul{
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 20px;
+        div{
+            width: 150px;
+            height: 60px;
+            border: 2px dotted brown;
             background-color: beige;
         }
-        li{
-            /* display: inline-block; */
-            margin-left: 20px;
+        .sub{
+            border: 2px solid navy;
+            background-color: lightskyblue;
+            position: relative; top: 30px; left: 30px;
         }
-        table{
-            border-collapse: collapse;
-            background-color: bisque;
+        #n3:hover{
+            opacity: 0.5;    
         }
-        td{
-            border: 1px solid black;
-            width: 50px;
-            height: 50px;
-            text-align: center;
+        #fix{
+            position: fixed; left: 300px; bottom: 100px;
+        }
+        #float{
+            width: 400px;
+            height: 300px; 
+            position: fixed; left: 300px;
         }
     </style>
 </head>
 <body>
-    <ul>
-        <li style="list-style: square;">프랑스</li>
-        <li style="list-style: circle;">이탈리아</li>
-        <li style="list-style: disc;">영국</li>
-    </ul>
-    <table>
-        <tr><td>월</td><td>화</td><td>수</td></tr>
-        <tr><td>1</td><td>2</td><td>3</td></tr>
-    </table>
+    <div>DIV1</div>
+    <div class="sub">DIV2</div>
+    <div>DIV3</div>
+    <div class="sub">DIV4</div>
+    <div id="float"><img src="media/beading.jpg" width="90px" style="float: left;">
+    DIV5 내가 직접 만든 비즈 팔찌이다. 방학동안 열심히 만들었다. 브릭 스티치를 이용하여 만들었으며 여름동안 포인트 악세사리로 잘 착용하고 다녔다.
+    하지만 지금은 날이 추워져 긴필을 입기 시작하면서 안 차고 다닌다.</div>
+    <div id="fix">DIV6</div>
+    <div id="n3">DIV7</div>
 </body>
 </html>
